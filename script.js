@@ -1,6 +1,8 @@
 
 const content = document.querySelector("#container")
+const item = document.createElement("p")
 const para = document.createElement("p")
+content.appendChild(item)
 content.appendChild(para);
 
 function getComputerChoice(){
@@ -36,30 +38,30 @@ document.addEventListener("DOMContentLoaded", () =>{
     
           function playRound(humanChoice,computerChoice){
             if(humanChoice == "rock" && computerChoice == "rock"){
-                para.textContent = "It is a tie!"}
+                item.textContent = "It is a tie!"}
             else if(humanChoice == "rock" && computerChoice =="paper"){
-                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "rock" && computerChoice =="scissors"){
-                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="paper"){
-                para.textContent = "It is a tie!"
+                item.textContent = "It is a tie!"
             }
             else if(humanChoice == "paper" && computerChoice =="rock"){
-                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="scissors"){
-                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="paper"){
-                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="rock"){
-                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="scissors"){
-                para.textContent = "It is a tie!"
+                item.textContent = "It is a tie!"
             }
             
           }
@@ -88,30 +90,30 @@ document.addEventListener("DOMContentLoaded", () =>{
     
           function playRound(humanChoice,computerChoice){
             if(humanChoice == "rock" && computerChoice == "rock"){
-                para.textContent = "It is a tie!"}
+                item.textContent = "It is a tie!"}
             else if(humanChoice == "rock" && computerChoice =="paper"){
-                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "rock" && computerChoice =="scissors"){
-                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="paper"){
-                para.textContent = "It is a tie!"
+                item.textContent = "It is a tie!"
             }
             else if(humanChoice == "paper" && computerChoice =="rock"){
-                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="scissors"){
-                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="paper"){
-                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="rock"){
-                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="scissors"){
-                para.textContent = "It is a tie!"
+                item.textContent = "It is a tie!"
             }
             
           }
@@ -140,30 +142,30 @@ document.addEventListener("DOMContentLoaded", () =>{
     
           function playRound(humanChoice,computerChoice){
             if(humanChoice == "rock" && computerChoice == "rock"){
-                para.textContent = "It is a tie!"}
+                item.textContent = "It is a tie!"}
             else if(humanChoice == "rock" && computerChoice =="paper"){
-                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "rock" && computerChoice =="scissors"){
-                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="paper"){
-                para.textContent = "It is a tie!"
+                item.textContent = "It is a tie!"
             }
             else if(humanChoice == "paper" && computerChoice =="rock"){
-                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="scissors"){
-                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="paper"){
-                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="rock"){
-                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="scissors"){
-                para.textContent = "It is a tie!"
+                item.textContent = "It is a tie!"
             }
             
           }
