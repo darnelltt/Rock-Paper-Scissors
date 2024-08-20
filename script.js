@@ -1,6 +1,7 @@
 
-const content = document.querySelector("#comtainer")
-para = document.createElement("p")
+const content = document.querySelector("#container")
+const para = document.createElement("p")
+content.appendChild(para);
 
 function getComputerChoice(){
    if(Math.random() < 0.33){
@@ -66,9 +67,9 @@ document.addEventListener("DOMContentLoaded", () =>{
          let HumanSelection = "rock"
          let computerSelection = getComputerChoice()
          playRound(HumanSelection,computerSelection)
-         console.log("The score is:\n Computer: " + computerScore + "\n Player: " + humanScore);
+         para.textContent = "The score is:\n Computer: " + computerScore + "\n Player: " + humanScore;
                 
-         return console.log("The final score is:\n Computer: " + computerScore + "\n Player: " + humanScore);
+         return para.textContent = "The final score is:\n Computer: " + computerScore + "\n Player: " + humanScore;
         }
 
       playGame()
@@ -87,30 +88,30 @@ document.addEventListener("DOMContentLoaded", () =>{
     
           function playRound(humanChoice,computerChoice){
             if(humanChoice == "rock" && computerChoice == "rock"){
-                console.log("It is a tie!")}
+                para.textContent = "It is a tie!"}
             else if(humanChoice == "rock" && computerChoice =="paper"){
-                console.log(`You have lost! ` + `Computer Score: ${computerScore+=1}`)
+                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "rock" && computerChoice =="scissors"){
-                console.log(`You win! ` + `Human Score: ${humanScore+=1}`)
+                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="paper"){
-                console.log("It is a tie!")
+                para.textContent = "It is a tie!"
             }
             else if(humanChoice == "paper" && computerChoice =="rock"){
-                console.log(`You win! ` + `Human Score: ${humanScore+=1}`)
+                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="scissors"){
-                console.log(`You have lost! ` + `Computer Score: ${computerScore+=1}`)
+                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="paper"){
-                console.log(`You win! ` + `Human Score: ${humanScore+=1}`)
+                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="rock"){
-                console.log(`You have lost! ` + `Computer Score: ${computerScore+=1}`)
+                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="scissors"){
-                console.log("It is a tie!")
+                para.textContent = "It is a tie!"
             }
             
           }
@@ -118,9 +119,9 @@ document.addEventListener("DOMContentLoaded", () =>{
          let HumanSelection = "paper"
          let computerSelection = getComputerChoice()
          playRound(HumanSelection,computerSelection)
-         console.log("The score is:\n Computer: " + computerScore + "\n Player: " + humanScore);
+         para.textContent = "The score is:\n Computer: " + computerScore + "\n Player: " + humanScore;
                 
-         return console.log("The final score is:\n Computer: " + computerScore + "\n Player: " + humanScore);
+         return para.textContent = "The final score is:\n Computer: " + computerScore + "\n Player: " + humanScore;
         }
 
       playGame()
@@ -139,30 +140,30 @@ document.addEventListener("DOMContentLoaded", () =>{
     
           function playRound(humanChoice,computerChoice){
             if(humanChoice == "rock" && computerChoice == "rock"){
-                console.log("It is a tie!")}
+                para.textContent = "It is a tie!"}
             else if(humanChoice == "rock" && computerChoice =="paper"){
-                console.log(`You have lost! ` + `Computer Score: ${computerScore+=1}`)
+                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "rock" && computerChoice =="scissors"){
-                console.log(`You win! ` + `Human Score: ${humanScore+=1}`)
+                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="paper"){
-                console.log("It is a tie!")
+                para.textContent = "It is a tie!"
             }
             else if(humanChoice == "paper" && computerChoice =="rock"){
-                console.log(`You win! ` + `Human Score: ${humanScore+=1}`)
+                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "paper" && computerChoice =="scissors"){
-                console.log(`You have lost! ` + `Computer Score: ${computerScore+=1}`)
+                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="paper"){
-                console.log(`You win! ` + `Human Score: ${humanScore+=1}`)
+                para.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="rock"){
-                console.log(`You have lost! ` + `Computer Score: ${computerScore+=1}`)
+                para.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
             }
             else if(humanChoice == "scissors" && computerChoice =="scissors"){
-                console.log("It is a tie!")
+                para.textContent = "It is a tie!"
             }
             
           }
@@ -170,9 +171,9 @@ document.addEventListener("DOMContentLoaded", () =>{
          let HumanSelection = "scissors"
          let computerSelection = getComputerChoice()
          playRound(HumanSelection,computerSelection)
-         console.log("The score is:\n Computer: " + computerScore + "\n Player: " + humanScore);
+         para.textContent = "The score is:\n Computer: " + computerScore + "\n Player: " + humanScore;
                 
-         return console.log("The final score is:\n Computer: " + computerScore + "\n Player: " + humanScore);
+         return para.textContent = "The final score is:\n Computer: " + computerScore + "\n Player: " + humanScore;
         }
 
       playGame()
