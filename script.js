@@ -2,8 +2,16 @@
 const content = document.querySelector("#container")
 const item = document.createElement("p")
 const para = document.createElement("p")
+const result = document.createElement("p")
 content.appendChild(item)
-content.appendChild(para);
+content.appendChild(para)
+
+content.appendChild(result)
+
+let computerScore = 0
+let humanScore = 0
+
+
 
 function getComputerChoice(){
    if(Math.random() < 0.33){
@@ -33,32 +41,31 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     rock.addEventListener("click", () =>{
         function playGame(){
-          let computerScore = 0
-          let humanScore = 0
-    
+          
+          
           function playRound(humanChoice,computerChoice){
             if(humanChoice == "rock" && computerChoice == "rock"){
                 item.textContent = "It is a tie!"}
             else if(humanChoice == "rock" && computerChoice =="paper"){
-                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${++computerScore}`
             }
             else if(humanChoice == "rock" && computerChoice =="scissors"){
-                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${++humanScore}`
             }
             else if(humanChoice == "paper" && computerChoice =="paper"){
                 item.textContent = "It is a tie!"
             }
             else if(humanChoice == "paper" && computerChoice =="rock"){
-                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${++humanScore}`
             }
             else if(humanChoice == "paper" && computerChoice =="scissors"){
-                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${++computerScore}`
             }
             else if(humanChoice == "scissors" && computerChoice =="paper"){
-                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${humanScore++}`
             }
             else if(humanChoice == "scissors" && computerChoice =="rock"){
-                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${++computerScore}`
             }
             else if(humanChoice == "scissors" && computerChoice =="scissors"){
                 item.textContent = "It is a tie!"
@@ -73,6 +80,12 @@ document.addEventListener("DOMContentLoaded", () =>{
                 
          return para.textContent = "The final score is:\n Computer: " + computerScore + "\n Player: " + humanScore;
         }
+        if(computerScore === 5){
+            result.textContent = "The computer has won Rock, Paper, Scissors"
+         } 
+        else if (humanScore === 5){
+            result.textContent = "You have won Rock, Paper, Scissors"
+         }
 
       playGame()
 
@@ -85,32 +98,31 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     paper.addEventListener("click", () =>{
         function playGame(){
-          let computerScore = 0
-          let humanScore = 0
+          
     
           function playRound(humanChoice,computerChoice){
             if(humanChoice == "rock" && computerChoice == "rock"){
                 item.textContent = "It is a tie!"}
             else if(humanChoice == "rock" && computerChoice =="paper"){
-                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${++computerScore}`
             }
             else if(humanChoice == "rock" && computerChoice =="scissors"){
-                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${++humanScore}`
             }
             else if(humanChoice == "paper" && computerChoice =="paper"){
                 item.textContent = "It is a tie!"
             }
             else if(humanChoice == "paper" && computerChoice =="rock"){
-                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${++humanScore}`
             }
             else if(humanChoice == "paper" && computerChoice =="scissors"){
-                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${++computerScore}`
             }
             else if(humanChoice == "scissors" && computerChoice =="paper"){
-                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${++humanScore}`
             }
             else if(humanChoice == "scissors" && computerChoice =="rock"){
-                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${++computerScore}`
             }
             else if(humanChoice == "scissors" && computerChoice =="scissors"){
                 item.textContent = "It is a tie!"
@@ -126,6 +138,13 @@ document.addEventListener("DOMContentLoaded", () =>{
          return para.textContent = "The final score is:\n Computer: " + computerScore + "\n Player: " + humanScore;
         }
 
+        if(computerScore == 5){
+            result.textContent = "The computer has won Rock, Paper, Scissors"
+         }
+        else if (humanScore == 5){
+            result.textContent = "You have won Rock, Paper, Scissors"
+         }
+
       playGame()
 
     })
@@ -137,32 +156,31 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     scissors.addEventListener("click", () =>{
         function playGame(){
-          let computerScore = 0
-          let humanScore = 0
+          
     
           function playRound(humanChoice,computerChoice){
             if(humanChoice == "rock" && computerChoice == "rock"){
                 item.textContent = "It is a tie!"}
             else if(humanChoice == "rock" && computerChoice =="paper"){
-                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${++computerScore}`
             }
             else if(humanChoice == "rock" && computerChoice =="scissors"){
-                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${++humanScore}`
             }
             else if(humanChoice == "paper" && computerChoice =="paper"){
                 item.textContent = "It is a tie!"
             }
             else if(humanChoice == "paper" && computerChoice =="rock"){
-                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${++humanScore}`
             }
             else if(humanChoice == "paper" && computerChoice =="scissors"){
-                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${++computerScore}`
             }
             else if(humanChoice == "scissors" && computerChoice =="paper"){
-                item.textContent = `You win! ` + `Human Score: ${humanScore+=1}`
+                item.textContent = `You win! ` + `Human Score: ${++humanScore}`
             }
             else if(humanChoice == "scissors" && computerChoice =="rock"){
-                item.textContent = `You have lost! ` + `Computer Score: ${computerScore+=1}`
+                item.textContent = `You have lost! ` + `Computer Score: ${++computerScore}`
             }
             else if(humanChoice == "scissors" && computerChoice =="scissors"){
                 item.textContent = "It is a tie!"
@@ -178,10 +196,18 @@ document.addEventListener("DOMContentLoaded", () =>{
          return para.textContent = "The final score is:\n Computer: " + computerScore + "\n Player: " + humanScore;
         }
 
+        if(computerScore === 5){
+            result.textContent = "The computer has won Rock, Paper, Scissors"
+         }
+        else if (humanScore === 5){
+            result.textContent = "You have won Rock, Paper, Scissors"
+         }
+
       playGame()
 
     })
 
 })
+
 
 
